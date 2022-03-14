@@ -1,0 +1,17 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 100vh;
+}
+.category_heading {
+  color: #234ad4;
+  font-size: 3rem;
+}
+.category_types {
+  display: flex;
+  flex-direction: row;
+}

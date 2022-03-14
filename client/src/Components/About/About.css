@@ -1,0 +1,17 @@
+.about {
+  background-color: #234ad4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.about-content {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.about-us-heading {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 3rem;
+}
