@@ -25,16 +25,24 @@ export default function ButtonAppBar() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         ScholarshipPortal
                     </Typography>
-                    <Link to='/'>
+                    <Link to='/' className={classes.component}>
                         <Button color="inherit" >Home</Button>
                     </Link>
                     <Link to='/national' className={classes.component}>
                         <Button color="inherit">National</Button>
                     </Link>
-                    <Button color="inherit">International</Button>
-                    <Button color="inherit">Regional</Button>
-                    <Button color="inherit">Research</Button>
-                    <Button color="inherit">Private</Button>
+                    <Link to='/international' className={classes.component}>
+                        <Button color="inherit">International</Button>
+                    </Link>
+                    <Link to='/regional' className={classes.component}>
+                        <Button color="inherit">Regional</Button>
+                    </Link>
+                    <Link to='/research' className={classes.component}>
+                        <Button color="inherit">Research</Button>
+                    </Link>
+                    <Link to='/Private' className={classes.component}>
+                        <Button color="inherit">Private</Button>
+                    </Link>
                 </Toolbar>
             </AppBar>
         </Box >

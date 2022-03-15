@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 
-const National_Data = () => {
+const Research_Data = () => {
     return (
         <div>
             <Navbar />
-            <Link to="/national" >
-                National
+            <Link to="/research" >
+                Research
             </Link>
         </div>
     )
 }
 
-export default National_Data
+export default Research_Data
