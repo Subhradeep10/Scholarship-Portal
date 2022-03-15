@@ -1,13 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 
 const National_Data = () => {
     return (
         <div>
-            <Navbar />
-            <div id="national_data">
+            <Link to="/national" >
                 National
-            </div>
+            </Link>
         </div>
     )
 }

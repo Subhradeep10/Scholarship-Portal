@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import makeStyles from '@mui/styles/makeStyles';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     component: {
@@ -24,10 +25,16 @@ export default function ButtonAppBar() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         ScholarshipPortal
                     </Typography>
-                    <a href="#Home" className={classes.component}><Button color="inherit" >Home</Button></a>
-                    <a href="#about" className={classes.component}><Button color="inherit">About</Button></a>
-                    <a href="#category" className={classes.component}><Button color="inherit">Category</Button></a>
-                    <Button color="inherit">Contact</Button>
+                    <Link to='/'>
+                        <Button color="inherit" >Home</Button>
+                    </Link>
+                    <Link to='/national' className={classes.component}>
+                        <Button color="inherit">National</Button>
+                    </Link>
+                    <Button color="inherit">International</Button>
+                    <Button color="inherit">Regional</Button>
+                    <Button color="inherit">Research</Button>
+                    <Button color="inherit">Private</Button>
                 </Toolbar>
             </AppBar>
         </Box >
