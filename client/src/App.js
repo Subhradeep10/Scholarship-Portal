@@ -13,12 +13,10 @@ import Category from "./Components/Category/Category";
 function Homepage() {
   return (
     <>
-
       <Navbar />
       <Home />
       <About />
       <Category />
-
     </>
   );
 }
@@ -35,8 +33,7 @@ function App() {
         <Route path="/private" element={<Private_Data />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
-
 
 export default App;

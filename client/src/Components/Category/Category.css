@@ -14,4 +14,11 @@
 .category_types {
   display: flex;
   flex-direction: row;
+  margin-top: 3%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.scholarship {
+  font-size: 2rem;
+  color: #234ad4;
 }
