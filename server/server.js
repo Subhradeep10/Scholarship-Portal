@@ -24,6 +24,7 @@ ResearchData();
 
 
 app.use(cors());
+app.use(express.static('public'));
 app.use(require("./routes/NationalRoute.js"));
 app.use(require("./routes/RegionalRoute.js"));
 app.use(require("./routes/InternationalRoutes.js"));
