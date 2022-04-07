@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
 const db = require('./Databases/db.js');
 
@@ -30,7 +30,7 @@ app.use(require("./routes/InternationalRoutes.js"));
 app.use(require("./routes/PrivateRoutes.js"));
 app.use(require("./routes/ResearchRoutes.js"));
 
-mongoose.connect(process.env.MONGODBURI || "mongodb+srv://user:1234@cluster0.f4e4k.mongodb.net/National?retryWrites=true&w=majority");
+mongoose.connect(process.env.MONGODBURI);
 
 
 
